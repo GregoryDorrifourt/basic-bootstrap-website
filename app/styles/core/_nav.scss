@@ -1,0 +1,97 @@
+.main-nav {
+    
+        border-color: rgba(34,34,34,.05);
+        font-family: $primary-font;
+        background-color: #fff;
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+
+    .navbar-header .navbar-brand {
+        text-transform: uppercase;
+        font-family: $primary-font;
+        font-weight: 700;
+        color: $primary-color;
+
+        &:hover, &:focus {
+            color: $primary-color-hover;
+        }
+    }
+
+    .nav > li > a,
+    .nav > li > a:focus {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        color: $text-color;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .nav > li.active > a,
+    .nav > li.active > a:focus {
+        color: $primary-color!important;
+        background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    @media(min-width:768px) {
+        
+        border-color: rgba(255,255,255,.3);
+        background-color: transparent;
+    
+        .navbar-header .navbar-brand {
+
+            @include alpha_white(.7);
+
+        }
+
+         .navbar-header .navbar-brand:hover,
+         .navbar-header .navbar-brand:focus {
+            color: #fff;
+        }
+
+        .nav > li > a,
+        .nav > li > a:focus {
+
+            @include alpha_white(.7);
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &.affix {
+
+            border-color: rgba(34,34,34,.05);
+            background-color: $white;
+
+            .navbar-header .navbar-brand {
+                
+                color: $primary-color;
+                font-size: 14px;
+
+                &:hover,&:focus {
+
+                    color: $primary-color-hover;
+                }
+            }
+            .nav > li > a,
+            .nav > li > a:focus {
+                color: $text-color;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+        }
+
+        
+    }
+}

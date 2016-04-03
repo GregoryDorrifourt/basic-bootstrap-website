@@ -1,0 +1,24 @@
+$primary-color:         #00F; // couleur-principale
+$primary-color-hover:   #eb3812; // couleur-principale hover
+
+$secondary-color:       #ed431f;
+
+$third-color:           #ee4b28;
+
+$white:                 #FFF;
+
+$text-color:            #222;
+
+$primary-font: 			'Open Sans','Helvetica Neue',Arial,sans-serif;
+
+
+@mixin alpha_white ($a) {
+
+	color:              rgba(255,255,255,$a)
+}
+
+@mixin transition_all($t) {
+	-webkit-transition: all $t;
+    -moz-transition: all $t;
+    transition: all $t;
+}

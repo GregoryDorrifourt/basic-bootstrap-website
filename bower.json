@@ -1,0 +1,32 @@
+{
+  "name": "niko-website",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-sass-official": "^3.2.0",
+    "font-awesome": "^4.5.0",
+    "animate.css": "^3.5.1",
+    "wow": "^1.1.2",
+    "ngSmoothScroll": "^2.0.0",
+    "angular": "^1.5.3",
+    "angular-cookies": "^1.5.3",
+    "angular-aria": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-touch": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-sanitize": "^1.5.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "nikoWebsiteApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
